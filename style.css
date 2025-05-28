@@ -1,0 +1,658 @@
+@font-face {
+  font-family: DN;
+  src: url('fonty/DN.ttf');
+}
+
+@font-face {
+  font-family: DNtitle;
+  src: url('fonty/DNtitle.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: white;
+  background-color: black;
+  text-align: justify;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.uvod {
+  background-image: url('gifs/bg1.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 10px solid black;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo {
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.uvod .logo:hover {
+  scale: 1.2;
+}
+
+.logo:hover {
+  filter: grayscale(0%);
+}
+
+.uvod h3 {
+  background-color: rgba(0, 0, 0, 0.74);
+  margin-top: 0;
+  padding: 1.5vw;
+  border-radius: 15px;
+  color: white;
+}
+
+.odsazeni {
+  height: 10vh;
+  width: 100vh;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 12122011;
+}
+
+nav .logo {
+  max-height: 8vh; 
+  width: auto;
+  margin: 2vh;
+}
+
+nav > div {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+
+nav > div div {
+    background-color: rgb(30, 30, 30);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+nav div a {
+  margin: 0.5vw;
+  padding: 1vw;
+  border-radius: 15px;
+  font-size: 1.1em;
+  transition: 0.4s;
+  font-family: DN;
+}
+
+nav div a:hover {
+  color: rgb(51, 51, 51);
+  background-color: white;
+  box-shadow: 0px 0px 33px 10px rgba(227,0,15,1);
+
+}
+
+nav > img {
+  max-height: 8vh; 
+  width: auto;
+  margin: 2vh;
+}
+
+nav div img {
+  max-height: 8vh; 
+  width: auto;
+  margin: 2vh;
+  border-radius: 15px;
+  border: solid 3px rgb(30, 30, 30);
+}
+
+.active {
+  background-color: rgb(43, 43, 43);
+}
+
+.popis {
+  text-align: center;
+  max-width: 60vw;
+  background-color: rgba(0, 0, 0, 0.74);
+  padding: 2vh;
+  border-radius: 15px;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('obrazky/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.sekce {
+  margin: 4vh;
+  display: flex;
+}
+
+.sekce a {
+  background-image: url('obrazky/page.jpg');
+  width: 15vw;
+  height: 15vw;
+  background-size: contain;
+  margin: 1.5vw;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkblue;
+  font-family: DN;
+  font-size: 2em;
+}
+
+.sekce a:hover {
+  transform: scale(1.2);
+}
+
+.popis h1 {
+  font-family: DN;
+  margin-bottom: 2vh;
+}
+
+.mute img {
+  width: 5vh;
+  height: 5vh;
+}
+
+.mute {
+  position: fixed;
+  background: transparent;
+  border: none;
+  margin: 3vh;
+  transition: 0.2s;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 50%;
+  animation: flash 1s;
+  animation-delay: 3s;
+}
+
+@keyframes flash {
+  50% {
+  transform: scale(1.2);
+  background-color: white;
+  opacity: 100%;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: none;
+    opacity: 50%;
+  }
+}
+
+.mute:hover {
+  transform: scale(1.2);
+  background-color: white;
+  opacity: 100%;
+}
+
+.hlavni {
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0;
+  height: 95vh;
+}
+
+.hlavni > div > * {
+  background-color: rgb(71, 71, 71);
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 2vw;
+  padding: 0;
+}
+
+.no-hover {
+  transition: 0.2s;
+}
+
+.no-hover:hover {
+  transform: scale(1.1);
+}
+
+.hlavni img {
+  border-radius: 20px;
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  border: solid 1px white;
+}
+
+.hlavni .nahled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  border-radius: 10px;
+  margin: 1vw 0;
+}
+
+.hlavni h2 {
+  font-size: 3em;
+}
+
+#l {
+  box-shadow: 39px 0px 116px 13px rgba(0,55,166,1);
+}
+
+#kira {
+  box-shadow: -39px 0px 116px 13px rgba(166,0,0,1);
+}
+
+#popis {
+  display: none;
+  margin-right: 1vw;
+  margin-top: 5vh;
+}
+
+#popis h2 {
+  margin-bottom: 3vh;
+  text-decoration: underline;
+}
+
+#popis p {
+  font-size: x-large;
+}
+
+#popis2 {
+  display: none;
+  margin-left: 1vw;
+  margin-top: 5vh;
+}
+
+#popis2 h2 {
+  margin-bottom: 3vh;
+  text-decoration: underline;
+}
+
+#popis2 p {
+  font-size: x-large;
+}
+
+#back img {
+  width: 5vh;
+  height: 5vh;
+}
+
+#back {
+  display: none;
+  position: fixed;
+  border: none;
+  margin: 3vh;
+  transition: 0.2s;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 50%;
+}
+
+#back:hover {
+  transform: scale(1.2);
+  background-color: white;
+  opacity: 100%;
+}
+
+.popisDetail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: none;
+}
+
+.popisDetail div {
+  width: 60vw;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popisDetail div h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.popisDetail div p {
+  font-size: 1.1em;
+  margin: 10px;
+}
+
+.casovaOsa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
+.casovaOsa > div {
+  width: 60vw;
+  padding: 20px;
+  background: #252525;
+  border-radius: 10px;
+  margin: 5vh 0;
+}
+
+.osa-item {
+  border-left: 4px solid #820000;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #535353;
+  border-radius: 5px;
+}
+
+.osa-item h3 {
+  font-size: 18px;
+  color: white;
+  margin-top: 5px;
+}
+
+.osa-item p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+.postavy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+}
+
+.karta {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: solid white 3px;
+  background-color: rgb(71, 71, 71);
+  width: 75vw;
+  margin: 5vh;
+  height: 30vh;
+  border-radius: 25px;
+  background: linear-gradient(90deg, rgba(166,0,0,1) 0%, rgba(182,0,0,1) 21%, rgba(0,0,0,0) 100%);
+}
+
+.karta > .backgroundImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  border-right: solid white 3px;
+}
+
+.karta > div {
+  margin: 2vw;
+  display: block;
+}
+
+.kartaR {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border: solid white 3px;
+  background-color: rgb(71, 71, 71);
+  width: 75vw;
+  margin: 5vh;
+  height: 30vh;
+  border-radius: 25px;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,14,182,1) 83%, rgba(24,0,196,1) 100%);
+}
+
+.kartaR > div {
+  margin: 2vw;
+  display: block;
+}
+
+.kartaR > .backgroundImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 25px 25px 0;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  border-left: solid white 3px;
+}
+
+.kartaRy {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: solid white 3px;
+  background-color: rgb(31, 31, 31);
+  width: 75vw;
+  margin: 5vh;
+  height: 30vh;
+  border-radius: 25px;
+}
+
+.kartaRy > .backgroundImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  border-right: solid white 3px;
+}
+
+.kartaRy > div {
+  margin: 2vw;
+  display: block;
+}
+
+.karta > .misa {
+  animation: misaImg 18s infinite ease;
+}
+
+.near {
+  animation: nearImg 18s infinite ease;
+}
+
+.teru {
+  animation: teruImg 18s infinite ease;
+}
+
+.soichiro {
+  animation: soichiroImg 18s infinite ease;
+}
+
+.ryuk {
+  animation: ryukImg 18s infinite ease;
+}
+
+.watari {
+  animation: watariImg 18s infinite ease;
+}
+
+@keyframes misaImg {
+   0% {background-image: url('obrazky/misa.jpg');}
+   33% {background-image: url('obrazky/misa2.jpg');}
+   66% {background-image: url('obrazky/misa3.jpg');}
+   100% {background-image: url('obrazky/misa.jpg');}
+}
+
+@keyframes nearImg {
+  0% {background-image: url('obrazky/near.jpg');}
+  33% {background-image: url('obrazky/near2.jpg');}
+  66% {background-image: url('obrazky/near3.jpg');}
+  100% {background-image: url('obrazky/near.jpg');}
+}
+
+@keyframes teruImg {
+  0% {background-image: url('obrazky/teru.jpg');}
+  33% {background-image: url('obrazky/teru2.jpg');}
+  66% {background-image: url('obrazky/teru3.jpg');}
+  100% {background-image: url('obrazky/teru.jpg');}
+}
+
+@keyframes soichiroImg {
+  0% {background-image: url('obrazky/sochiro.jpg');}
+  33% {background-image: url('obrazky/sochiro2.jpg');}
+  66% {background-image: url('obrazky/sochiro3.jpg');}
+  100% {background-image: url('obrazky/sochiro.jpg');}
+}
+
+@keyframes ryukImg {
+  0% {background-image: url('obrazky/ryuk.webp');}
+  33% {background-image: url('obrazky/ryuk2.jpg');}
+  66% {background-image: url('obrazky/ryuk3.webp');}
+  100% {background-image: url('obrazky/ryuk.webp');}
+}
+
+@keyframes watariImg {
+  0% {background-image: url('obrazky/watari.webp');}
+  33% {background-image: url('obrazky/watari2.jpg');}
+  66% {background-image: url('obrazky/watari3.webp');}
+  100% {background-image: url('obrazky/watari.webp');}
+}
+
+.ostPostavy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 0;
+}
+
+.ostPostavy img {
+  width: 20vw;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 5px;
+  border: solid white 2px;
+  transition: 0.2s;
+  filter: grayscale(70%)
+}
+
+.ostPostavy img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.pravidla {
+  margin: 5vh 0;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pravidla img {
+  height: 60vh;
+  margin: 1vw;
+}
+
+.pozadi {
+  position: fixed;
+  height: 90vh;
+  width: 100%;
+  z-index: -1;
+  background-image: url('obrazky/bg3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.statistiky {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistiky > h3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 7px;
+  border-radius: 0 0 10px 10px;
+}
+
+.statistiky > div {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2vh;
+  border-radius: 25px;
+}
+
+table {
+  border: solid;
+  width: fit-content;
+  border-collapse: collapse;
+  margin: 1vw;
+}
+
+th {
+  text-decoration: underline;
+}
+
+td, th {
+  border: solid 1px white;
+  padding: 1vw;
+}
+
+.statistiky > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
